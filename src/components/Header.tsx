@@ -21,7 +21,7 @@ const Header = () => {
         {user ? (
           <div className="flex gap-x-2 sm:gap-x-8 items-center">
             <p className="text-xs sm:text-sm capitalize">
-              hello, {user.username}
+              здравствуйте, {user.username}
             </p>
             <Button
               variant={"link"}
@@ -29,19 +29,19 @@ const Header = () => {
               className="capitalize"
               onClick={handleLogout}
             >
-              logout
+              выйти
             </Button>
           </div>
         ) : (
           <div className="flex gap-x-6 justify-center items-center -mr-4">
             <Button asChild variant={"link"} size={"sm"}>
               <Link to={"/login"} className="capitalize">
-                sign in / guest
+                войти / гость
               </Link>
             </Button>
             <Button asChild variant={"link"} size={"sm"}>
               <Link to={"/register"} className="capitalize">
-                register
+                зарегистрироваться
               </Link>
             </Button>
           </div>

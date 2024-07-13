@@ -4,7 +4,7 @@ import ProductsGrid from "./ProductsGrid";
 const FeaturedProducts = () => {
   return (
     <section className="pt-24">
-      <SectionTitle text="featured products" />
+      <SectionTitle text="Популярное" />
       <ProductsGrid />
     </section>
   );
